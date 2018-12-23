@@ -1,0 +1,759 @@
+BACKUP ~SpiritHunter/backup~
+AUTHOR ~ThisIsUlb@gmail.com~
+//README ~SpiritHunter/readme.txt~
+
+ALWAYS
+    ACTION_IF (NOT GAME_IS ~soa tob iwd2 pst bg1 totsc iwd how totlm tutu tutu_totsc bgt ca iwd_in_bg2 bg2ee eet iwdee~) THEN BEGIN     // Check if BGEE/SOD
+	COPY ~SpiritHunter/files/25STWEAP.2DA~ ~override~                                                               // Add working 25STWEAP.2DA copy from BGII so ADD_KIT command doesn't break
+	END
+  INCLUDE ~SpiritHunter/lib/functions.tph~   // Borrowed from Argent77 for dynamic animtion slot search code
+  INCLUDE ~SpiritHunter/lib/fl#add_kit_ee.tpa~ // EE compatibility patch, updated version by Subtledoctor
+END
+
+
+LANGUAGE ~English~  ~english~ ~SpiritHunter/translations/english/UB#SH.tra~
+//LANGUAGE ~Deutsch~  ~german~  ~SpiritHunter/translations/german/UB#SH.tra~
+
+
+
+BEGIN 
+~Spirit Hunter Shaman Kit~ 
+
+
+// Basic copy & compile
+COPY ~SpiritHunter/files/copy~ ~override~
+COMPILE ~SpiritHunter/files/scripts/UB_SH0.baf~
+COMPILE ~SpiritHunter/files/scripts/UB_SH0A.baf~
+COMPILE ~SpiritHunter/files/scripts/UB_SH01.baf~
+COMPILE ~SpiritHunter/files/scripts/UB_SHR3.baf~
+
+//Spells
+
+// Add Spirit Arrow Projectile
+ADD_PROJECTILE ~SpiritHunter/files/UB_SH1B.PRO~  ~UBSPIRAR~   //projectile
+
+// Spirit Arrow Creation Spell
+COPY ~SpiritHunter/files/UB_SH1A.SPL~ ~override~
+SAY NAME1 ~Create Spirit Arrows~
+SAY UNIDENTIFIED_DESC ~Create Spirit Arrows
+
+Level: 1
+Sphere: Conjuring
+Range: Personal
+Duration: 8 hours
+Casting Time: 6
+Area of Effect: Personal
+Saving Throw: None
+
+This spell creates a stack of 20 Spirit Arrows. Spirit Arrows are partially incorporeal and deal missile as well as magic damage, ignoring any magic damage resistance the target might have. They strike as magical arrows +1, with a bonus of +1 for every 6 experience levels of the caster, up to a total of +5 for a 24th-level caster but do not gain any bonuses to hit or damage based on their enchantment.
+Spirits, fey creatures, elementals, and spectral undead take triple magic damage.~
+
+// Spirit Arrow +1
+COPY ~SpiritHunter/files/UB_SH11.ITM~ ~override~
+ SAY NAME2 ~Spirit Arrow +1~ 
+ SAY NAME1 ~Spirit Arrow +1~ 
+ SAY DESC ~This arrow is partially incorporeal and deals missile damage as well as magic damage, ignoring any magic damage resistance the target might have. It strikes as a magical arrow +1.
+Spirits, fey creatures, elementals, and spectral undead take triple magic damage.
+
+
+STATISTICS:
+
+Combat abilities:
+- Magic damage dealt by this arrow ignores magic damage resistance
+
+Enchantment: +1
+Damage: 1d3(missile) + 1d3(magic), additional 2d3(magic) vs. spirits, fey creatures, elementals, and spectral undead
+Duration: Eight hours
+Launcher: Bow
+
+Weight: 0~
+WRITE_SHORT 0x09c ~%UB_SH1B%~
+			LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 319 // Restrict Item
+      match_special = 1 
+special = RESOLVE_STR_REF (~Shaman~)
+	END
+
+// Spirit Arrow +2
+COPY ~SpiritHunter/files/UB_SH12.ITM~ ~override~
+ SAY NAME2 ~Spirit Arrow +2~ 
+ SAY NAME1 ~Spirit Arrow +2~
+ SAY DESC ~This arrow is partially incorporeal and deals missile damage as well as magic damage, ignoring any magic damage resistance the target might have. It strikes as a magical arrow +2.
+Spirits, fey creatures, elementals, and spectral undead take triple magic damage.
+
+
+STATISTICS:
+
+Combat abilities:
+- Magic damage dealt by this arrow ignores magic damage resistance
+
+Enchantment: +2
+Damage: 1d3(missile) + 1d3(magic), additional 2d3(magic) vs. spirits, fey creatures, elementals, and spectral undead
+Duration: Eight hours
+Launcher: Bow
+
+Weight: 0~
+WRITE_SHORT 0x09c ~%UB_SH1B%~
+			LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 319 // Restrict Item
+      match_special = 1 
+special = RESOLVE_STR_REF (~Shaman~)
+	END
+
+
+// Spirit Arrow +3
+COPY ~SpiritHunter/files/UB_SH13.ITM~ ~override~
+ SAY NAME2 ~Spirit Arrow +3~
+ SAY NAME1 ~Spirit Arrow +3~  
+ SAY DESC ~This arrow is partially incorporeal and deals missile damage as well as magic damage, ignoring any magic damage resistance the target might have. It strikes as a magical arrow +3.
+Spirits, fey creatures, elementals, and spectral undead take triple magic damage.
+
+
+STATISTICS:
+
+Combat abilities:
+- Magic damage dealt by this arrow ignores magic damage resistance
+
+Enchantment: +3
+Damage: 1d3(missile) + 1d3(magic), additional 2d3(magic) vs. spirits, fey creatures, elementals, and spectral undead
+Duration: Eight hours
+Launcher: Bow
+
+Weight: 0~
+WRITE_SHORT 0x09c ~%UB_SH1B%~
+			LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 319 // Restrict Item
+      match_special = 1 
+special = RESOLVE_STR_REF (~Shaman~)
+	END
+
+// Spirit Arrow +4
+COPY ~SpiritHunter/files/UB_SH14.ITM~ ~override~
+ SAY NAME2 ~Spirit Arrow +4~
+ SAY NAME1 ~Spirit Arrow +4~
+ SAY DESC ~This arrow is partially incorporeal and deals missile damage as well as magic damage, ignoring any magic damage resistance the target might have. It strikes as a magical arrow +4.
+Spirits, fey creatures, elementals, and spectral undead take tripe magic damage.
+
+
+STATISTICS:
+
+Combat abilities:
+- Magic damage dealt by this arrow ignores magic damage resistance
+
+Enchantment: +4
+Damage: 1d3(missile) + 1d3(magic), additional 2d3(magic) vs. spirits, fey creatures, elementals, and spectral undead
+Duration: Eight hours
+Launcher: Bow
+
+Weight: 0~
+WRITE_SHORT 0x09c ~%UB_SH1B%~
+			LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 319 // Restrict Item
+      match_special = 1 
+special = RESOLVE_STR_REF (~Shaman~)
+	END
+
+// Spirit Arrow +5
+COPY ~SpiritHunter/files/UB_SH15.ITM~ ~override~
+ SAY NAME2 ~Spirit Arrow +5~
+ SAY NAME1 ~Spirit Arrow +5~
+ SAY DESC ~This arrow is partially incorporeal and deals missile damage as well as magic damage, ignoring any magic damage resistance the target might have. It strikes as a magical arrow +5.
+Spirits, fey creatures, elementals, and spectral undead take triple magic damage.
+
+
+STATISTICS:
+
+Combat abilities:
+- Magic damage dealt by this arrow ignores magic damage resistance
+
+Enchantment: +5
+Damage: 1d3(missile) + 1d3(magic), additional 2d3(magic) vs. spirits, fey creatures, elementals, and spectral undead
+Duration: Eight hours
+Launcher: Bow
+
+Weight: 0~
+WRITE_SHORT 0x09c ~%UB_SH1B%~
+			LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 319 // Restrict Item
+      match_special = 1 
+special = RESOLVE_STR_REF (~Shaman~)
+	END
+
+// Frost Imbued Shot
+COPY ~SpiritHunter/files/UB_SH2A.SPL~ ~override~
+SAY NAME1 ~Imbued Shot - Frost~
+SAY UNIDENTIFIED_DESC ~Imbued Shot - Frost
+
+Level: 2
+Sphere: Enchantment
+Range: Special
+Duration: Special
+Casting Time: 1
+Area of Effect: Caster
+Saving Throw: Spell partial
+
+This spell imbues the caster's bow with frost magic. The spell will travel with any arrow released by the caster's bow but only take effect once, on the first successful hit made during its duration.
+In addition to its normal effects the imbued arrow inflicts 1d4 points of cold damage and slows the target for one round unless a save vs spell is made. For every two extra levels of experience the arrow deals an additional 1d4 cold damage and the target receives a -1 save penalty, up to 5d4 damage and a -4 penalty at 9th level.
+
+Note: Only one Imbued Shot effect can be active at a time. Casting another Imbued Shot spell will remove the previous spell's magic from the bow.~
+
+/////Patch Slow Display///////
+COPY ~SpiritHunter/files/UB_SH2B.SPL~ ~override~
+  LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 139 // display string
+      match_parameter1 = 14668 // "Slowed"
+ parameter1 = RESOLVE_STR_REF (~Slowed~)
+  END
+
+// Create Splitting Arrows
+
+// Add Splitting Arrow Projectile
+ADD_PROJECTILE ~SpiritHunter/files/UB_SH3A.PRO~  ~UBSPLIAR~   //projectile
+ADD_PROJECTILE ~SpiritHunter/files/UB_SH3B.PRO~  ~UBVISUAR~   //projectile (visual only)
+COPY ~SpiritHunter/files/UB_SH3B.SPL~ ~override~ //visual projectile spell
+WRITE_SHORT 0x098 ~%UB_SH3B%~
+
+// Splitting Arrow Creation Spell
+COPY ~SpiritHunter/files/UB_SH3A.SPL~ ~override~
+SAY NAME1 ~Create Splitting Arrows~
+SAY UNIDENTIFIED_DESC ~Create Splitting Arrows
+
+Level: 5
+Sphere: Conjuring
+Range: Personal
+Duration: 8 hours
+Casting Time: 6
+Area of Effect: Special
+Saving Throw: None
+
+This spell creates a stack of 5 Splitting Arrows. Splitting Arrows are in many ways similar to Spirit Arrows but carry a far more powerful enchantment which allows them to hit multiple targets at once. 
+Upon release a Splitting Arrow will instantly split into multiple identical arrows, one for each enemy within a 60 degree cone centered around the original target. All instances of the arrow are magically linked and will either all hit their targets or all miss, depending on the initial hit roll.
+Splitting Arrows are always considered to be of +5 enchantment and will not harm neutral or allied targets.~
+
+// Splitting Arrow +5
+COPY ~SpiritHunter/files/UB_SH3A.ITM~ ~override~
+ SAY NAME2 ~Splitting Arrow +5~
+ SAY NAME1 ~Splitting Arrow +5~
+ SAY DESC ~This arrow is partially incorporeal and deals missile damage as well as magic damage, ignoring any magic damage resistance the target might have. It strikes as a magical arrow +5 but can not harm neutral or allied characters.
+Upon release a Splitting Arrow will create magical copies of itself, one for each enemy in a 60 degree cone centered around the original target. All instances of the arrow are magically linked and will either all hit their targets or all miss, depending on the initial hit roll.
+Spirits, fey creatures, elementals, and spectral undead take triple magic damage.
+
+
+STATISTICS:
+
+Combat abilities:
+- Hits all targets within a 60 degree cone around the original target
+- Magic damage dealt by this arrow ignores magic damage resistance
+
+Enchantment: +5
+Damage: 1d3(missile) + 1d3(magic), additional 2d3(magic) vs. spirits, fey creatures, elementals, and spectral undead
+Duration: Eight hours
+Launcher: Bow
+
+Weight: 0~
+WRITE_SHORT 0x09c ~%UB_SH3A%~
+			LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 319 // Restrict Item
+      match_special = 1 
+special = RESOLVE_STR_REF (~Shaman~)
+	END
+
+// Ether Step
+COPY ~SpiritHunter/files/UB_SH4A.SPL~ ~override~
+SAY NAME1 ~Ether Step~
+SAY UNIDENTIFIED_DESC ~Ether Step
+Level: 3
+School: Invocation
+Range: Personal
+Duration: Instant
+Casting Time: 0
+Area of Effect: Caster
+Saving Throw: None
+
+This spell allows the caster to take a quick step into the Ethereal Plane and re-emerge almost instantly at any point within <PRO_HISHER> visual range.~
+
+// Imbued Shot - Silence
+COPY ~SpiritHunter/files/UB_SH5A.SPL~ ~override~
+SAY NAME1 ~Imbued Shot - Silence~
+SAY UNIDENTIFIED_DESC ~Imbued Shot - Silence
+
+Level: 4
+Sphere: Enchantment
+Range: Special
+Duration: Special
+Casting Time: 1
+Area of Effect: Caster
+Saving Throw: None
+
+This spell imbues the caster's bow with magical silence. The spell will travel with any arrow released by the caster's bow but only take effect once, on the first successful hit made during its duration.
+In addition to its normal effects the imbued arrow silences the target for one turn.
+
+Note: Only one Imbued Shot effect can be active at a time. Casting another Imbued Shot spell will remove the previous spell's magic from the bow.~
+
+COPY ~SpiritHunter/files/UB_SH5B.SPL~ ~override~
+  LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 139 // display string
+      match_parameter1 = 14002 // "Silence"
+ parameter1 = RESOLVE_STR_REF (~Silence~)
+  END
+
+// Imbued Shot - Blood Drinker
+COPY ~SpiritHunter/files/UB_SH6A.SPL~ ~override~
+SAY NAME1 ~Imbued Shot - Blood Drinking~
+SAY UNIDENTIFIED_DESC ~Imbued Shot - Blood Drinking
+
+Level: 6
+Sphere: Enchantment
+Range: Special
+Duration: Special
+Casting Time: 1
+Area of Effect: Caster
+Saving Throw: None
+
+This spell imbues the caster's bow with a Blood Drinking spell. The spell will travel with any arrow released by the caster's bow but only take effect once, on the first successful hit made during its duration.
+In addition to its normal effects, targets hit by the imbued arrow will take 1d4 poison damage instantly and another 1d4 poison damage every two seconds for two rounds. The caster is healed for all damage done.
+
+Note: Only one Imbued Shot effect can be active at a time. Casting another Imbued Shot spell will remove the previous spell's magic from the bow.~
+
+// Ether Walk
+COPY ~SpiritHunter/files/UB_SH7A.SPL~ ~override~
+SAY NAME1 ~Ether Walk~
+SAY UNIDENTIFIED_DESC ~Ether Walk
+
+Level: 7
+Sphere: Invocation
+Range: Personal
+Duration: 2 rounds
+Casting Time: 1
+Area of Effect: Caster
+Saving Throw: None
+
+This spell allows the caster to enter the Ethereal Plane, rendering <PRO_HIMHER> incorporeal. 
+For the next two rounds, the caster can not be attacked, attack, cast spells or perform a shamanic dance. During this time, <PRO_HESHE> also can not be perceived by other creatures and moves at four times <PRO_HISHER> normal speed.
+
+Note: Ether Step can not be used while under the effects of Ether Walk~
+
+
+  ///////////////////////////////
+  // Install Spirit Animations //
+  ///////////////////////////////
+  
+    COPY ~SpiritHunter/files/Anim_Hound~ ~override~
+	COPY ~SpiritHunter/files/Sound_Hound~ ~override~
+  
+  // Small
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL ~No free creature animation slot found.~
+  END
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% SPIRIT_HOUND_1~ UNLESS ~SPIRIT_HOUND_1~
+  CLEAR_IDS_MAP
+  COPY ~SpiritHunter/files/exx1.ini~ ~override/%hexNumber%.ini~
+
+  // Medium
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL ~No free creature animation slot found.~
+  END
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% SPIRIT_HOUND_2~ UNLESS ~SPIRIT_HOUND_2~
+  CLEAR_IDS_MAP
+  COPY ~SpiritHunter/files/exx2.ini~ ~override/%hexNumber%.ini~
+  
+  // Large
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL ~No free creature animation slot found.~
+  END
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% SPIRIT_HOUND_3~ UNLESS ~SPIRIT_HOUND_3~
+  CLEAR_IDS_MAP
+  COPY ~SpiritHunter/files/exx3.ini~ ~override/%hexNumber%.ini~  
+  
+  
+  ///////////////////////////
+  // Patch hound animation///
+  ///////////////////////////
+  
+	CLEAR_IDS_MAP
+	COPY_EXISTING ~UB_SH0.cre~ ~override~
+	WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~SPIRIT_HOUND_1~))
+	SAY NAME1 ~Spirit Hound~
+	SAY NAME2 ~Spirit Hound~
+	
+    COPY_EXISTING ~UB_SHR3.cre~ ~override~
+	WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~SPIRIT_HOUND_2~))
+	SAY NAME1 ~Spirit Hound~
+	SAY NAME2 ~Spirit Hound~
+
+  ///////////////////////////////////////
+  // Patch weapons to change animation///
+  ///////////////////////////////////////
+
+COPY_EXISTING ~UB_SH02.itm~ ~override~  // lvl6 weapon
+	LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 53 // Animation Change
+      parameter1 = (IDS_OF_SYMBOL (~animate~ ~SPIRIT_HOUND_2~))  // medium hound
+	END
+		
+COPY_EXISTING ~UB_SH03.itm~ ~override~  // lvl2 weapon
+	LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 53 // Animation Change
+      parameter1 = (IDS_OF_SYMBOL (~animate~ ~SPIRIT_HOUND_3~))  // large hound
+	END
+  
+//name attack items
+COPY_EXISTING ~UB_SH01.ITM~ ~override~
+SAY NAME2 ~Attack~
+COPY_EXISTING ~UB_SH02.ITM~ ~override~
+SAY NAME2 ~Attack~
+COPY_EXISTING ~UB_SH03.ITM~ ~override~
+SAY NAME2 ~Attack~
+COPY_EXISTING ~UB_SH04.ITM~ ~override~
+SAY NAME2 ~Attack~
+COPY_EXISTING ~UB_SH05.ITM~ ~override~
+SAY NAME2 ~Attack~
+
+//patch disable string effects
+COPY_EXISTING ~UB_SH00.ITM~ ~override~
+	LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 267 // Disable String
+      match_parameter1 = 1 
+ parameter1 = RESOLVE_STR_REF (~Stun~)
+	END
+		LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 267 // Disable String
+      match_parameter1 = 2 
+ parameter1 = RESOLVE_STR_REF (~Stunned~)
+	END
+		LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 267 // Disable String
+      match_parameter1 = 3 
+ parameter1 = RESOLVE_STR_REF (~Dominated~)
+	END
+		LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 267 // Disable String
+      match_parameter1 = 4 
+ parameter1 = RESOLVE_STR_REF (~Dire charmed~)
+	END
+		LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 267 // Disable String
+      match_parameter1 = 5 
+ parameter1 = RESOLVE_STR_REF (~Charmed~)
+	END
+		LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 267 // Disable String
+      match_parameter1 = 6 
+ parameter1 = RESOLVE_STR_REF (~Panic~)
+	END
+		LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 267 // Disable String
+      match_parameter1 = 7 
+ parameter1 = RESOLVE_STR_REF (~Held~)
+	END
+		LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 267 // Disable String
+      match_parameter1 = 8 
+ parameter1 = RESOLVE_STR_REF (~Rigid Thinking~)
+	END
+		LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 267 // Disable String
+      match_parameter1 = 9 
+ parameter1 = RESOLVE_STR_REF (~Confused~)
+	END
+		LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 267 // Disable String
+      match_parameter1 = 10
+ parameter1 = RESOLVE_STR_REF (~Devour brain~)
+	END
+		LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 267 // Disable String
+      match_parameter1 = 11 
+ parameter1 = RESOLVE_STR_REF (~Intelligence Modification~)
+	END
+		LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 267 // Disable String
+      match_parameter1 = 1 
+ parameter1 = RESOLVE_STR_REF (~One Level Drained~)
+	END
+		LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 267 // Disable String
+      match_parameter1 = 12 
+ parameter1 = RESOLVE_STR_REF (~Two Levels Drained~)
+	END
+		LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 267 // Disable String
+      match_parameter1 = 13 
+ parameter1 = RESOLVE_STR_REF (~Three Levels Drained~)
+	END
+			LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 267 // Disable String
+      match_parameter1 = 14 
+ parameter1 = RESOLVE_STR_REF (~Four Levels Drained~)
+	END
+			LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 267 // Disable String
+      match_parameter1 = 15 
+ parameter1 = RESOLVE_STR_REF (~Five Levels Drained~)
+	END
+	
+//////////////////////////////////////////////////////////
+//////////////////// HLAs ////////////////////////////////
+//////////////////////////////////////////////////////////
+
+// HLA Quiver
+COPY ~SpiritHunter/files/UB_SH8A.ITM~ ~override~
+SAY NAME2 ~Phantom Legion Quiver~
+SAY NAME1 ~Phantom Legion Quiver~
+SAY DESC ~Phantom Legion Quiver
+Crafted and enchanted by a powerful Spirit Hunter, this quiver holds an infinite number of Splitting Arrows.
+
+STATISTICS:
+
+Equipped Abilities:
+ Quiver of Plenty: endless +5 Splitting Arrows
+ 
+Combat abilities:
+- Arrows hit all enemy targets within a 60 degree cone around the original target
+- Magic damage dealt by Splitting Arrows ignores magic damage resistance
+
+Damage: 1d3(missile) + 1d3(magic), additional 2d3(magic) vs. spirits, fey creatures, elementals, and spectral undead
+Weight: 0
+Launcher: Bow~
+WRITE_SHORT 0x09c ~%UB_SH3A%~
+			LPF ALTER_EFFECT
+    INT_VAR
+      check_globals = 1
+      check_headers = 1
+      match_opcode = 319 // Restrict Item
+      match_special = 1 
+      special = RESOLVE_STR_REF (~Shaman~)
+	END
+
+COPY ~SpiritHunter/files/UB_SH8A.SPL~ ~override~
+SAY NAME1 ~Create Phantom Legion Quiver~
+SAY UNIDENTIFIED_DESC ~By using this ability the Spirit Hunter crafts a single Phantom Legion Quiver.
+This powerful artifact holds an infinite number of Splitting Arrows.
+
+STATISTICS:
+
+Equipped Abilities:
+ Quiver of Plenty: endless +5 Splitting Arrows
+ 
+Combat abilities:
+- Arrows hit all enemy targets within a 60 degree cone around the original target
+- Magic damage dealt by Splitting Arrows ignores magic damage resistance
+
+Damage: 1d3(missile) + 1d3(magic), additional 2d3(magic) vs. spirits, fey creatures, elementals, and spectral undead
+Weight: 0
+Launcher: Bow~
+
+// HLA Ether Stalker
+COPY ~SpiritHunter/files/UB_SH9A.SPL~ ~override~
+SAY NAME1 ~Ether Stalker~
+SAY UNIDENTIFIED_DESC ~The most wise and powerful of the Spirit Hunters are able to send their arrows and spells back to the Material Plane while they themselves remain safely on the Ethereal Plane.
+This passive ability allows a Spirit Hunter to attack and cast spells while Ether Walk is active but reduces <PRO_HISHER> damage by half during that time.~
+
+// HLA Sharpshooter
+COPY ~SpiritHunter/files/UB_SH10.SPL~ ~override~
+SAY NAME1 ~Sharpshooter~
+SAY UNIDENTIFIED_DESC ~Increases the critical hit chance of ranged attacks by 10%.
+
+This passive ability can be selected up to 5 times.~
+
+// HLA Master Archer
+COPY ~SpiritHunter/files/UB_SH11.SPL~ ~override~
+SAY NAME1 ~Master Archer~
+SAY UNIDENTIFIED_DESC ~Once a Spirit Hunter has mastered the bow, <PRO_HISHER> speed and precision can compete with even the best archers of the realms.
+This passive ability grants two additional attacks per round.
+
+Requires: Sharpshooter~
+
+// HLA Dire Fangs
+COPY ~SpiritHunter/files/UB_SHR0.SPL~ ~override~
+SAY NAME1 ~Dire Fangs~
+SAY UNIDENTIFIED_DESC ~The Shaman's Spirit Hound companion becomes even more powerful, gaining an additional 10% critical hit chance.
+
+This passive ability can be selected up to 5 times.~
+
+COPY ~SpiritHunter/files/UB_SHRA.SPL~ ~override~
+SAY NAME1 ~Dire Fangs~
+SAY UNIDENTIFIED_DESC ~The Shaman's Spirit Hound companion becomes even more powerful, gaining additional 10% critical hit chance.
+
+This passive ability can be selected up to 5 times.~
+
+//HLA Leader Of The Pack
+COPY ~SpiritHunter/files/UB_SHRB.SPL~ ~override~
+SAY NAME1 ~Leader Of The Pack~
+SAY UNIDENTIFIED_DESC ~Leader Of The Pack~
+
+COPY ~SpiritHunter/files/UB_SHR1.SPL~ ~override~
+SAY NAME1 ~Leader Of The Pack~
+SAY UNIDENTIFIED_DESC ~Once a Spirit Hunter's companion has become powerful enough, it can call additional Spirit Hounds from the Ethereal Plane.
+
+This ability grants the Leader Of The Pack spell to the shaman's Spirit Hound companion. It can be selected multiple times.
+
+Leader Of The Pack
+Level: Epic
+School: Conjuration
+Range: Long
+Duration: 5 turns
+Casting Time: 4
+Area of Effect: Special
+Saving Throw: None
+
+The Spirit Hound calls forth four additional Spirit Hounds until the spell expires or the leading Spirit Hound returns to the Ethereal Plane.
+Each hound has 18 hit dices and will follow the commands of the Spirit Hunter.
+This spell can only be used once every 5 turns or if the Spirit Hound companion is re-summoned.
+
+Requires: Dire Fangs~
+
+COPY_EXISTING ~UB_SHR3.itm~ ~override~  // lvl6 weapon
+SAY NAME1 ~Attack~
+SAY NAME2 ~Attack~
+	
+COPY ~SpiritHunter/files/UB_SHR3.SPL~ ~override~
+SAY NAME1 ~Leader Of The Pack~
+SAY UNIDENTIFIED_DESC ~Leader Of The Pack
+Level: Epic
+School: Conjuration
+Range: Long
+Duration: 5 turns
+Casting Time: 4
+Area of Effect: Special
+Saving Throw: None
+
+The Spirit Hound calls forth four additional Spirit Hounds until the spell expires or the leading Spirit Hound returns to the Ethereal Plane.
+Each hound has 18 hit dices and will follow the commands of the Spirit Hunter.
+This spell can only be used once every 5 turns or if the Spirit Hound companion is re-summoned.~
+
+// Internal name of the kit
+ADD_KIT ~UB_SH~
+
+  // Appended to CLASWEAP.2da
+  ~UB_SH                1           0           1           1           0           0           0           1~
+
+  // Appended column-wise to WEAPPROF.2da
+  ~UB_SH 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 1 0 0 5 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+  // Appended to ABCLASRQ.2da
+  ~UB_SH                0       0       12       0       12      0~
+
+  // Appended to ABCLSMOD.2da
+  ~UB_SH                0       0       0      0       0       0~
+
+  // Appended to ABDCDSRQ.2da
+  ~UB_SH                0 0 0 0 0 0~
+
+  // Appended to ABDCSCRQ.2da
+  ~UB_SH                0 0 0 0 0 0~
+
+  // Appended to ALIGNMNT.2da
+  ~UB_SH                0       0       0       1       1       1       1       1       1~
+
+  // Appended to DUALCLAS.2da
+  ~UB_SH                0       0       0       0       0       0~
+
+  // Path to my CLAB.2da file 
+  ~SpiritHunter/files/CLABUBSH.2da~
+
+  // PC races and classes allowed to use this kit, from KITTABLE.2da
+  ~K_SH_H K_SH_HO~
+
+  // Usability flags, added to the end of the KITLIST.2da entry
+  ~0x00004000        21~
+
+  // HLA table to use; see LUABBR.2da
+  ~UBµ~
+
+  // List of starting equipment for PCs starting in ToB. Appended column-wise to 25STWEAP.2da
+  ~LEAT14 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL19 BRAC16 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN4,2 POTN14,5 HAM07 SW1H27 STAF08~
+
+  // Lower, mixed, and help kit names and descriptions, added to KITLIST.2da 
+  SAY ~Spirit Hunter~
+  SAY ~Spirit Hunter~
+  SAY @2
+  
+  // Call EE compatibility patch
+  LAF fl#add_kit_ee
+  STR_VAR
+  kit_name = UB_SH
+  END
