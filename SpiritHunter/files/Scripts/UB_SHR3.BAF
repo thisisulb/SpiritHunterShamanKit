@@ -1,0 +1,116 @@
+IF
+	Global("ubstimer","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		StartTimer(0,295)
+		SetGlobal("ubstimer","LOCALS",1)
+		SetInterrupt(TRUE)
+END
+
+IF
+	TimerExpired(0)
+	Global("ubstimer","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0D",Myself)  // <NO TEXT>
+		SmallWait(5)
+		DestroySelf()
+END
+
+IF
+	HPLT(Myself,2)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0D",Myself)  // <NO TEXT>
+		SmallWait(5)
+		DestroySelf()
+END
+
+IF
+	Global("UB_SHDEAD","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0D",Myself)  // <NO TEXT>
+		SmallWait(5)
+		DestroySelf()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	WeaponEffectiveVs(NearestEnemyOf(Myself),MAINHAND)
+	WeaponCanDamage(NearestEnemyOf(Myself),MAINHAND)
+	ActionListEmpty()
+	Range(NearestEnemyOf(Myself),30)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	See(SecondNearestEnemyOf(Myself))
+	WeaponEffectiveVs(SecondNearestEnemyOf(Myself),MAINHAND)
+	WeaponCanDamage(SecondNearestEnemyOf(Myself),MAINHAND)
+	ActionListEmpty()
+	Range(SecondNearestEnemyOf(Myself),30)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	See(ThirdNearestEnemyOf(Myself))
+	WeaponEffectiveVs(ThirdNearestEnemyOf(Myself),MAINHAND)
+	WeaponCanDamage(ThirdNearestEnemyOf(Myself),MAINHAND)
+	ActionListEmpty()
+	Range(ThirdNearestEnemyOf(Myself),30)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	See(FourthNearestEnemyOf(Myself))
+	WeaponEffectiveVs(FourthNearestEnemyOf(Myself),MAINHAND)
+	WeaponCanDamage(FourthNearestEnemyOf(Myself),MAINHAND)
+	ActionListEmpty()
+	Range(FourthNearestEnemyOf(Myself),30)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	See(FifthNearestEnemyOf(Myself))
+	WeaponEffectiveVs(FifthNearestEnemyOf(Myself),MAINHAND)
+	WeaponCanDamage(FifthNearestEnemyOf(Myself),MAINHAND)
+	ActionListEmpty()
+	Range(FifthNearestEnemyOf(Myself),30)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	See(SixthNearestEnemyOf(Myself))
+	WeaponEffectiveVs(SixthNearestEnemyOf(Myself),MAINHAND)
+	WeaponCanDamage(SixthNearestEnemyOf(Myself),MAINHAND)
+	ActionListEmpty()
+	Range(SixthNearestEnemyOf(Myself),30)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	InActiveArea("UB_SH0")
+	!Range("UB_SH0",25)
+	ActionListEmpty()
+THEN
+	RESPONSE #100
+		MoveToObject("UB_SH0")
+		Wait(1)
+END

@@ -1,0 +1,112 @@
+IF
+	See(NearestEnemyOf(Myself))
+	StateCheck(NearestEnemyOf(Myself),STATE_INVISIBLE)
+	WeaponEffectiveVs(NearestEnemyOf(Myself),MAINHAND)
+	WeaponCanDamage(NearestEnemyOf(Myself),MAINHAND)
+	ActionListEmpty()
+	Range(NearestEnemyOf(Myself),20)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	See(SecondNearestEnemyOf(Myself))
+	StateCheck(SecondNearestEnemyOf(Myself),STATE_INVISIBLE)
+	WeaponEffectiveVs(SecondNearestEnemyOf(Myself),MAINHAND)
+	WeaponCanDamage(SecondNearestEnemyOf(Myself),MAINHAND)
+	ActionListEmpty()
+	Range(SecondNearestEnemyOf(Myself),20)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	See(ThirdNearestEnemyOf(Myself))
+	StateCheck(ThirdNearestEnemyOf(Myself),STATE_INVISIBLE)
+	WeaponEffectiveVs(ThirdNearestEnemyOf(Myself),MAINHAND)
+	WeaponCanDamage(ThirdNearestEnemyOf(Myself),MAINHAND)
+	ActionListEmpty()
+	Range(ThirdNearestEnemyOf(Myself),20)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	See(FourthNearestEnemyOf(Myself))
+	StateCheck(FourthNearestEnemyOf(Myself),STATE_INVISIBLE)
+	WeaponEffectiveVs(FourthNearestEnemyOf(Myself),MAINHAND)
+	WeaponCanDamage(FourthNearestEnemyOf(Myself),MAINHAND)
+	ActionListEmpty()
+	Range(FourthNearestEnemyOf(Myself),20)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	See(FifthNearestEnemyOf(Myself))
+	StateCheck(FifthNearestEnemyOf(Myself),STATE_INVISIBLE)
+	WeaponEffectiveVs(FifthNearestEnemyOf(Myself),MAINHAND)
+	WeaponCanDamage(FifthNearestEnemyOf(Myself),MAINHAND)
+	ActionListEmpty()
+	Range(FifthNearestEnemyOf(Myself),20)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	See(SixthNearestEnemyOf(Myself))
+	StateCheck(SixthNearestEnemyOf(Myself),STATE_INVISIBLE)
+	WeaponEffectiveVs(SixthNearestEnemyOf(Myself),MAINHAND)
+	WeaponCanDamage(SixthNearestEnemyOf(Myself),MAINHAND)
+	ActionListEmpty()
+	Range(SixthNearestEnemyOf(Myself),20)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	ActionListEmpty()
+	WeaponEffectiveVs(NearestEnemyOf(Myself),MAINHAND)
+	WeaponCanDamage(NearestEnemyOf(Myself),MAINHAND)
+	Range(NearestEnemyOf(Myself),6)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	ActionListEmpty()
+	AttackedBy([ANYONE],DEFAULT)
+	Allegiance(LastAttackerOf(Myself),ENEMY)
+	See(LastAttackerOf(Myself))
+	WeaponEffectiveVs(LastAttackerOf(Myself),MAINHAND)
+	WeaponCanDamage(LastAttackerOf(Myself),MAINHAND)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	!InActiveArea(Player1)
+THEN
+	RESPONSE #100
+		MoveGlobalObject("UB_SH0",Player1)  // Hound Spirit
+		MoveToOffset([2.3])
+END
+
+IF
+	InActiveArea(Player1)
+	!Range(Player1,25)
+	ActionListEmpty()
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+		Wait(1)
+END
