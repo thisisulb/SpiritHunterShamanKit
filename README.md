@@ -25,17 +25,20 @@ The Spirit Hunter can call a Spirit Hound from the Ethereal Plane to assist <PRO
 **SPIRIT HOUND COMPANION:**  
 Base Stats:  
 HP: 16 / AC: 5 / Thac0: 18 / Attacks Per Round: 1 / Cold and Phys. Resistance: 20% / All Saves: 16 / Regeneration: 1 HP Per Round Immune to mind altering effects, level drain, maze and imprisonment. Can see invisible creatures.  
+  
 **Attack:**  
    - Level 1:  1d3 piercing + 1d3 cold, +1 enchantment  
    - Level 6:  1d3 piercing + 1d3 cold, +2 enchantment  
    - Level 12: 1d5+2 piercing + 1d5 cold, +3 enchantment  
    - Level 18: 2d5+4 piercing + 1d5 cold, +4 enchantment  
    - Level 24: 2d5+6 piercing + 1d5 cold, +3 enchantment  
-**Gains** +8 HP, +1 Thac0 (up to a base Thac0 of 0), 1% Cold and Phys. Resistance per level of experience and additional bonuses at levels 6, 12, 18 and 24.  
+**Gains:**  
++8 HP, +1 Thac0 (up to a base Thac0 of 0), 1% Cold and Phys. Resistance per level of experience and additional bonuses at levels 6, 12, 18 and 24.  
    - At level 6:  +1 Attack Per Round, +3 AC, +4 to All Saves  
    - At level 12: +2 AC, +4 to All Saves  
    - At level 18:  +1 Attack Per Round, +6 Thac0, +2 AC, +4 to All Saves  
    - At level 24:  +1 Attack Per Round, +4 Thac0, +2 AC, +4 to All Saves  
+     
 **Gains a level whenever the Spirit Hunter does.**   
 - Does not gain bonus spells per day from high Wisdom.
 - May not dual-class or multi-class.
