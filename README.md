@@ -34,10 +34,10 @@ The Spirit Hunter can call a Spirit Hound from the Ethereal Plane to assist <PRO
 	- Level 18: 2d5+4 piercing + 1d5 cold, +4 enchantment
 	- Level 24: 2d5+6 piercing + 1d5 cold, +3 enchantment
    Gains +8 HP, +1 Thac0 (up to a base Thac0 of 0), 1% Cold and Phys. Resistance per level of experience and additional bonuses at levels 6, 12, 18 and 24. 
-   At level 6:  +1 Attack Per Round, +3 AC, +4 to All Saves
-   At level 12: +2 AC, +4 to All Saves
-   At level 18:  +1 Attack Per Round, +6 Thac0, +2 AC, +4 to All Saves
-   At level 24:  +1 Attack Per Round, +4 Thac0, +2 AC, +4 to All Saves
+   - At level 6:  +1 Attack Per Round, +3 AC, +4 to All Saves
+   - At level 12: +2 AC, +4 to All Saves
+   - At level 18:  +1 Attack Per Round, +6 Thac0, +2 AC, +4 to All Saves
+   - At level 24:  +1 Attack Per Round, +4 Thac0, +2 AC, +4 to All Saves
    Gains a level whenever the Spirit Hunter does. 
 
 - Does not gain bonus spells per day from high Wisdom.
@@ -48,14 +48,14 @@ The Spirit Hunter can call a Spirit Hound from the Ethereal Plane to assist <PRO
 **Spell Overview:**
 
 **Create Spirit Arrows**
-Level: 1
-Sphere: Conjuring
-Range: Personal
-Duration: 8 hours
-Casting Time: 6
-Area of Effect: Personal
-Saving Throw: None
-
+Level: 1  
+Sphere: Conjuring  
+Range: Personal  
+Duration: 8 hours  
+Casting Time: 6  
+Area of Effect: Personal  
+Saving Throw: None  
+  
 This spell creates a stack of 20 Spirit Arrows. Spirit Arrows are partially incorporeal and deal missile as well as magic damage, ignoring any magic damage resistance the target might have. They strike as magical arrows +1, with a bonus of +1 for every 6 experience levels of the caster, up to a total of +5 for a 24th-level caster but do not gain any bonuses to hit or damage based on their enchantment.
 Spirits, fey creatures, elementals, and spectral undead take triple magic damage.
 
