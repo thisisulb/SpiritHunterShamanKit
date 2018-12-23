@@ -18,6 +18,9 @@ Spirit Hunters are equal parts Shaman and Hunter. They are skilled marksmen and 
 - Gains immediate access to a number of Spirit Hunter-specific spells, which can be cast like any other: Create Spirit Arrows, Imbued Shot - Frost, Ether Step, Imbued Shot - Silence, Create Splitting Arrows, Imbued Shot - Blood Drinker, Ether Walk
 - Gains use of the Detect Illusion skill with 20% points as a base and an 4 points per level, up to a maximum of 100% at level 20.
 - A Spirit Hunters' 'Shamanic Dance' does not summon normal spirits but instead calls a Spirit Hound to assist the Shaman.
+- Does not gain bonus spells per day from high Wisdom.
+- May not dual-class or multi-class.
+- Hit Dice: d8  
   
 **SHAMANIC DANCE:** 
 The Spirit Hunter can call a Spirit Hound from the Ethereal Plane to assist <PRO_HIMHER> on <PRO_HISHER> hunt. The Spirit Hound will form a bond with the Shaman and become <PRO_HISHER> permanent companion. If slain, the Spirit Hound will return to the Ethereal Plane until re-summoned by the Spirit Hunter.
@@ -34,6 +37,7 @@ HP: 16 / AC: 5 / Thac0: 18 / Attacks Per Round: 1 / Cold and Phys. Resistance: 2
    - Level 24: 2d5+6 piercing + 1d5 cold, +3 enchantment
      
 **Gains:**  
+  
 +8 HP, +1 Thac0 (up to a base Thac0 of 0), 1% Cold and Phys. Resistance per level of experience and additional bonuses at levels 6, 12, 18 and 24.  
    - At level 6:  +1 Attack Per Round, +3 AC, +4 to All Saves  
    - At level 12: +2 AC, +4 to All Saves  
@@ -41,9 +45,6 @@ HP: 16 / AC: 5 / Thac0: 18 / Attacks Per Round: 1 / Cold and Phys. Resistance: 2
    - At level 24:  +1 Attack Per Round, +4 Thac0, +2 AC, +4 to All Saves  
      
 **Gains a level whenever the Spirit Hunter does.**   
-- Does not gain bonus spells per day from high Wisdom.
-- May not dual-class or multi-class.
-- Hit Dice: d8
 
 
   
