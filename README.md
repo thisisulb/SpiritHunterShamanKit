@@ -1,11 +1,12 @@
-# SpiritHunterShamanKit for BG:EE, BG2EE, EET, IWD1EE(untested)
-## Spirit Hunter - A Wild Hunt inspired shaman kit that focuses on using short bows.
+#
+## SpiritHunterShamanKit for BG:EE, BG2EE, EET, IWD1EE(untested)
+### Spirit Hunter - A Wild Hunt inspired shaman kit that focuses on using short bows.
 
-###*WARNING* This kit is quite obviously completely overpowered. Do not use if you want a challenging play-through. *WARNING*
+**WARNING This kit is quite obviously completely overpowered. Do not use if you want a challenging play-through
 
 Spirit Hunters are equal parts Shaman and Hunter. They are skilled marksmen and can use their Shamanic Dance to summon a Spirit Hound to aid them on their hunt.
 
-CLASS FEATURES:
+**CLASS FEATURES:
 
 - May only wear leather, studded leather, and hide armor.
 - May not equip shields larger than bucklers.
@@ -18,10 +19,10 @@ CLASS FEATURES:
 - Gains use of the Detect Illusion skill with 20% points as a base and an 4 points per level, up to a maximum of 100% at level 20.
 - A Spirit Hunters' 'Shamanic Dance' does not summon normal spirits but instead calls a Spirit Hound to assist the Shaman.
   
-SHAMANIC DANCE: 
+**SHAMANIC DANCE:** 
 The Spirit Hunter can call a Spirit Hound from the Ethereal Plane to assist <PRO_HIMHER> on <PRO_HISHER> hunt. The Spirit Hound will form a bond with the Shaman and become <PRO_HISHER> permanent companion. If slain, the Spirit Hound will return to the Ethereal Plane until re-summoned by the Spirit Hunter.
 
-SPIRIT HOUND COMPANION:
+**SPIRIT HOUND COMPANION:
 
 	Base Stats:
 	HP: 16 / AC: 5 / Thac0: 18 / Attacks Per Round: 1 / Cold and Phys. Resistance: 20% / All Saves: 16 / Regeneration: 1 HP Per Round
@@ -44,10 +45,9 @@ SPIRIT HOUND COMPANION:
 - Hit Dice: d8
 
 
-#Spell Overview:
+**Spell Overview:
 
-###Create Spirit Arrows
-
+**Create Spirit Arrows**
 Level: 1
 Sphere: Conjuring
 Range: Personal
@@ -59,8 +59,7 @@ Saving Throw: None
 This spell creates a stack of 20 Spirit Arrows. Spirit Arrows are partially incorporeal and deal missile as well as magic damage, ignoring any magic damage resistance the target might have. They strike as magical arrows +1, with a bonus of +1 for every 6 experience levels of the caster, up to a total of +5 for a 24th-level caster but do not gain any bonuses to hit or damage based on their enchantment.
 Spirits, fey creatures, elementals, and spectral undead take triple magic damage.
 
-###Imbued Shot - Frost
-
+**Imbued Shot - Frost**
 Level: 2
 Sphere: Enchantment
 Range: Special
@@ -74,21 +73,7 @@ In addition to its normal effects the imbued arrow inflicts 1d4 points of cold d
 
 Note: Only one Imbued Shot effect can be active at a time. Casting another Imbued Shot spell will remove the previous spell's magic from the bow.
 
-###Create Splitting Arrows
-
-Level: 5
-Sphere: Conjuring
-Range: Personal
-Duration: 8 hours
-Casting Time: 6
-Area of Effect: Special
-Saving Throw: None
-
-This spell creates a stack of 5 Splitting Arrows. Splitting Arrows are in many ways similar to Spirit Arrows but carry a far more powerful enchantment which allows them to hit multiple targets at once. 
-Upon release a Splitting Arrow will instantly split into multiple identical arrows, one for each enemy within a 60 degree cone centered around the original target. All instances of the arrow are magically linked and will either all hit their targets or all miss, depending on the initial hit roll.
-Splitting Arrows are always considered to be of +5 enchantment and will not harm neutral or allied targets.
-
-###Ether Step
+**Ether Step**
 Level: 3
 School: Invocation
 Range: Personal
@@ -99,8 +84,7 @@ Saving Throw: None
 
 This spell allows the caster to take a quick step into the Ethereal Plane and re-emerge almost instantly at any point within <PRO_HISHER> visual range.
 
-###Imbued Shot - Silence
-
+**Imbued Shot - Silence**
 Level: 4
 Sphere: Enchantment
 Range: Special
@@ -114,8 +98,20 @@ In addition to its normal effects the imbued arrow silences the target for one t
 
 Note: Only one Imbued Shot effect can be active at a time. Casting another Imbued Shot spell will remove the previous spell's magic from the bow.
 
-###Imbued Shot - Blood Drinking
+**Create Splitting Arrows**
+Level: 5
+Sphere: Conjuring
+Range: Personal
+Duration: 8 hours
+Casting Time: 6
+Area of Effect: Special
+Saving Throw: None
 
+This spell creates a stack of 5 Splitting Arrows. Splitting Arrows are in many ways similar to Spirit Arrows but carry a far more powerful enchantment which allows them to hit multiple targets at once. 
+Upon release a Splitting Arrow will instantly split into multiple identical arrows, one for each enemy within a 60 degree cone centered around the original target. All instances of the arrow are magically linked and will either all hit their targets or all miss, depending on the initial hit roll.
+Splitting Arrows are always considered to be of +5 enchantment and will not harm neutral or allied targets.
+
+**Imbued Shot - Blood Drinking**
 Level: 6
 Sphere: Enchantment
 Range: Special
@@ -129,8 +125,7 @@ In addition to its normal effects, targets hit by the imbued arrow will take 1d4
 
 Note: Only one Imbued Shot effect can be active at a time. Casting another Imbued Shot spell will remove the previous spell's magic from the bow.
 
-###Ether Walk
-
+**Ether Walk**
 Level: 7
 Sphere: Invocation
 Range: Personal
@@ -146,11 +141,11 @@ Note: Ether Step can not be used while under the effects of Ether Walk
 
 
 
-#HLA Overview:
+**HLA Overview:
 
 
 
-###Create Phantom Legion Quiver
+**Create Phantom Legion Quiver**
 By using this ability the Spirit Hunter crafts a single Phantom Legion Quiver.
 This powerful artifact holds an infinite number of Splitting Arrows.
 
@@ -167,22 +162,22 @@ Damage: 1d3(missile) + 1d3(magic), additional 2d3(magic) vs. spirits, fey creatu
 Weight: 0
 Launcher: Bow
 
-###Ether Stalker
+**Ether Stalker**
 The most wise and powerful of the Spirit Hunters are able to send their arrows and spells back to the Material Plane while they themselves remain safely on the Ethereal Plane.
 This passive ability allows a Spirit Hunter to attack and cast spells while Ether Walk is active but reduces <PRO_HISHER> damage by half during that time.
 
-###Master Archer
+**Master Archer**
 Once a Spirit Hunter has mastered the bow, <PRO_HISHER> speed and precision can compete with even the best archers of the realms.
 This passive ability grants two additional attacks per round.
 
 Requires: Sharpshooter
 
-###Dire Fangs
+**Dire Fangs**
 The Shaman's Spirit Hound companion becomes even more powerful, gaining an additional 10% critical hit chance.
 
 This passive ability can be selected up to 5 times.
 
-###Leader Of The Pack
+**Leader Of The Pack**
 Once a Spirit Hunter's companion has become powerful enough, it can call additional Spirit Hounds from the Ethereal Plane.
 
 This ability grants the Leader Of The Pack spell to the shaman's Spirit Hound companion. It can be selected multiple times.
