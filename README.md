@@ -2,11 +2,11 @@
 ## A Wild Hunt inspired shaman kit that focuses on using short bows.
 ### For BG:EE, BG2:EE, EET, IWD:EE(untested)
 
-**WARNING This kit is quite obviously completely overpowered. Do not use if you want a challenging play-through
+**WARNING This kit is quite obviously completely overpowered. Do not use if you want a challenging play-through**
 
 Spirit Hunters are equal parts Shaman and Hunter. They are skilled marksmen and can use their Shamanic Dance to summon a Spirit Hound to aid them on their hunt.
 
-**CLASS FEATURES:
+**CLASS FEATURES:**
 
 - May only wear leather, studded leather, and hide armor.
 - May not equip shields larger than bucklers.
@@ -22,7 +22,7 @@ Spirit Hunters are equal parts Shaman and Hunter. They are skilled marksmen and 
 **SHAMANIC DANCE:** 
 The Spirit Hunter can call a Spirit Hound from the Ethereal Plane to assist <PRO_HIMHER> on <PRO_HISHER> hunt. The Spirit Hound will form a bond with the Shaman and become <PRO_HISHER> permanent companion. If slain, the Spirit Hound will return to the Ethereal Plane until re-summoned by the Spirit Hunter.
 
-**SPIRIT HOUND COMPANION:
+**SPIRIT HOUND COMPANION:**
 
 	Base Stats:
 	HP: 16 / AC: 5 / Thac0: 18 / Attacks Per Round: 1 / Cold and Phys. Resistance: 20% / All Saves: 16 / Regeneration: 1 HP Per Round
@@ -45,7 +45,7 @@ The Spirit Hunter can call a Spirit Hound from the Ethereal Plane to assist <PRO
 - Hit Dice: d8
 
 
-**Spell Overview:
+**Spell Overview:**
 
 **Create Spirit Arrows**
 Level: 1
@@ -141,7 +141,7 @@ Note: Ether Step can not be used while under the effects of Ether Walk
 
 
 
-**HLA Overview:
+**HLA Overview:**
 
 
 
