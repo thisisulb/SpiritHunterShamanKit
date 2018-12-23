@@ -31,7 +31,8 @@ HP: 16 / AC: 5 / Thac0: 18 / Attacks Per Round: 1 / Cold and Phys. Resistance: 2
    - Level 6:  1d3 piercing + 1d3 cold, +2 enchantment  
    - Level 12: 1d5+2 piercing + 1d5 cold, +3 enchantment  
    - Level 18: 2d5+4 piercing + 1d5 cold, +4 enchantment  
-   - Level 24: 2d5+6 piercing + 1d5 cold, +3 enchantment  
+   - Level 24: 2d5+6 piercing + 1d5 cold, +3 enchantment
+     
 **Gains:**  
 +8 HP, +1 Thac0 (up to a base Thac0 of 0), 1% Cold and Phys. Resistance per level of experience and additional bonuses at levels 6, 12, 18 and 24.  
    - At level 6:  +1 Attack Per Round, +3 AC, +4 to All Saves  
@@ -45,6 +46,7 @@ HP: 16 / AC: 5 / Thac0: 18 / Attacks Per Round: 1 / Cold and Phys. Resistance: 2
 - Hit Dice: d8
 
 
+  
 **Spell Overview:**
 
 **Create Spirit Arrows**  
