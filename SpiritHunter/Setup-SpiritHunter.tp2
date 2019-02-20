@@ -1,6 +1,6 @@
 BACKUP ~SpiritHunter/backup~
 AUTHOR ~ThisIsUlb@gmail.com~
-VERSION ~0.3~
+VERSION ~0.4~
 //README ~SpiritHunter/readme.txt~
 
 ALWAYS
@@ -762,5 +762,5 @@ ADD_KIT ~UB_SH~
   
   //  dof sphere system support
   ACTION_IF FILE_EXISTS_IN_GAME ~RASPHERE.marker~ BEGIN
-  LAF RA_SPHERE_COMPAT STR_VAR kitname = ~UB_SH~ clabfile = ~CLABUBSH~ END
+  LAF RA_SPHERE_COMPAT STR_VAR kitname = ~UB_SH~ clabfile = ~CLABUBSH~ seqresref  = ~UB_SH~ END
   END
