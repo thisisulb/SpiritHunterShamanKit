@@ -1,4 +1,4 @@
-# Spirit Hunter v0.3
+# Spirit Hunter
 ## A Wild Hunt inspired shaman kit that focuses on using short bows.
 ### For BG:EE, BG2:EE, EET, IWD:EE(untested)
 
