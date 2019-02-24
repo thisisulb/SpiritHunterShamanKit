@@ -50,18 +50,17 @@ HP: 16 / AC: 5 / Thac0: 18 / Attacks Per Round: 1 / Cold and Phys. Resistance: 2
   
 **Spell Overview:**
 
-**Create Spirit Arrows**  
+**Mark of the Hunt**  
 Level: 1  
-Sphere: Conjuring  
-Range: Personal  
-Duration: 8 hours  
-Casting Time: 6  
-Area of Effect: Personal  
-Saving Throw: None  
+Sphere: Illusion  
+Range: 40  
+Duration: 1 turn  
+Casting Time: 1  
+Area of Effect: Target  
+Saving Throw: Spell  
   
-This spell creates a stack of 20 Spirit Arrows. Spirit Arrows are partially incorporeal and deal missile as well as magic damage, ignoring any magic damage resistance the target might have. They strike as magical arrows +1, with a bonus of +1 for every 6 experience levels of the caster, up to a total of +5 for a 24th-level caster but do not gain any bonuses to hit or damage based on their enchantment.
-Spirits, fey creatures, elementals, and spectral undead take triple magic damage.
-
+The target is outlined in magical light, purging any invisibilty effects. If the target fails a saving throw vs. spell it will continue to glow for the next turn, suffering a -2 penalty to its AC and becoming unable to turn invisible.  
+  
 **Imbued Shot - Frost**  
 Level: 2  
 Sphere: Enchantment  
@@ -101,19 +100,18 @@ In addition to its normal effects the imbued arrow silences the target for one t
   
 Note: Only one Imbued Shot effect can be active at a time. Casting another Imbued Shot spell will remove the previous spell's magic from the bow.  
   
-**Create Splitting Arrows**  
+**Hunter's Gaze**  
 Level: 5  
-Sphere: Conjuring  
+Sphere: Enchantment  
 Range: Personal  
-Duration: 8 hours  
+Duration: 2 rounds/level  
 Casting Time: 6  
-Area of Effect: Special  
+Area of Effect: Personal  
 Saving Throw: None  
   
-This spell creates a stack of 5 Splitting Arrows. Splitting Arrows are in many ways similar to Spirit Arrows but carry a far more powerful enchantment which allows them to hit multiple targets at once.  
-Upon release a Splitting Arrow will instantly split into multiple identical arrows, one for each enemy within a 60 degree cone centered around the original target. All instances of the arrow are magically linked and will either all hit their targets or all miss, depending on the initial hit roll.  
-Splitting Arrows are always considered to be of +5 enchantment and will not harm neutral or allied targets.  
-  
+For the duration of the spell the caster is immune to blindness and can see through invisibility, allowing <PRO_HIMHER> to target invisible creatures with spells and ignore attack penalties for attacking invisible targets.  
+//Note: Needs EEex for full funcionality   
+    
 **Imbued Shot - Blood Drinking**  
 Level: 6  
 Sphere: Enchantment  
@@ -145,30 +143,15 @@ Note: Ether Step can not be used while under the effects of Ether Walk
 
 
 **HLA Overview:**  
-
-  
-
-**Create Phantom Legion Quiver**  
-By using this ability the Spirit Hunter crafts a single Phantom Legion Quiver.
-This powerful artifact holds an infinite number of Splitting Arrows.  
-  
-STATISTICS:  
-  
-Equipped Abilities:  
- Quiver of Plenty: endless +5 Splitting Arrows  
    
-Combat abilities:  
-- Arrows hit all enemy targets within a 60 degree cone around the original target  
-- Magic damage dealt by Splitting Arrows ignores magic damage resistance  
-  
-Damage: 1d3(missile) + 1d3(magic), additional 2d3(magic) vs. spirits, fey creatures, elementals, and spectral undead  
-Weight: 0  
-Launcher: Bow  
-  
 **Ether Stalker**  
 The most wise and powerful of the Spirit Hunters are able to send their arrows and spells back to the Material Plane while they themselves remain safely on the Ethereal Plane.  
 This passive ability allows a Spirit Hunter to attack and cast spells while Ether Walk is active but reduces <PRO_HISHER> damage by half during that time.  
   
+**Sharpshooter**
+Increases the critical hit chance of ranged attacks by 10%.
+This passive ability can be selected up to 5 times.  
+    
 **Master Archer**  
 Once a Spirit Hunter has mastered the bow, <PRO_HISHER> speed and precision can compete with even the best archers of the realms.
 This passive ability grants two additional attacks per round.  
