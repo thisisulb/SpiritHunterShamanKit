@@ -149,12 +149,12 @@ Note: Ether Step can not be used while under the effects of Ether Walk
 The most wise and powerful of the Spirit Hunters are able to send their arrows and spells back to the Material Plane while they themselves remain safely on the Ethereal Plane.  
 This passive ability allows a Spirit Hunter to attack and cast spells while Ether Walk is active but reduces <PRO_HISHER> damage by half during that time.  
   
-**Sharpshooter**
+**Sharpshooter**  
 Increases the critical hit chance of ranged attacks by 10%.
 This passive ability can be selected up to 5 times.  
     
 **Master Archer**  
-Once a Spirit Hunter has mastered the bow, <PRO_HISHER> speed and precision can compete with even the best archers of the realms.
+An experienced Spirit Hunter's speed and precision can compete with even the best archers of the realms.
 This passive ability grants two additional attacks per round.  
   
 Requires: Sharpshooter  
