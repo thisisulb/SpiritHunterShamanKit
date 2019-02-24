@@ -103,7 +103,7 @@ Note: Only one Imbued Shot effect can be active at a time. Casting another Imbue
   
 **Hunter's Gaze**  
 Level: 5  
-Sphere: Enchantment  
+Sphere: Divination  
 Range: Personal  
 Duration: 2 turns  
 Casting Time: 6  
@@ -132,7 +132,7 @@ Level: 7
 Sphere: Invocation  
 Range: Personal  
 Duration: 2 rounds  
-Casting Time: 1  
+Casting Time: 0  
 Area of Effect: Caster  
 Saving Throw: None  
   
