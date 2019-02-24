@@ -13,7 +13,7 @@ Spirit Hunters are equal parts Shaman and Hunter. They are skilled marksmen and 
 - May only use the following weapons: dagger, club, spear, axe, quarterstaff, dart, sling, and shortbow.
 - May achieve Grandmastery (five slots) with short bows but only become Proficient (one slot) in any other weapon class.
 - At level one and for every four levels of experience receives a 1 point increase to hit and damage with ranged weapons.
-- Missile attacks gain a passive enchantment bonus, starting at +1 and increasing every four levels of experience up to +5 at level 16. 
+- Attacks gain a passive enchantment bonus, starting at +1 and increasing every four levels of experience up to +5 at level 16. 
 - May cast druidic spells.
 - Does not automatically learn all spells of a given level as Druids do. Instead, Shamans select new spells to learn at each level, which they can cast daily without memorization.
 - Gains immediate access to a number of Spirit Hunter-specific spells, which can be cast like any other: Create Spirit Arrows, Imbued Shot - Frost, Ether Step, Imbued Shot - Silence, Create Splitting Arrows, Imbued Shot - Blood Drinker, Ether Walk
@@ -105,7 +105,7 @@ Note: Only one Imbued Shot effect can be active at a time. Casting another Imbue
 Level: 5  
 Sphere: Enchantment  
 Range: Personal  
-Duration: 2 rounds/level  
+Duration: 2 turns  
 Casting Time: 6  
 Area of Effect: Personal  
 Saving Throw: None  
