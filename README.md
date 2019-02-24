@@ -16,7 +16,7 @@ Spirit Hunters are equal parts Shaman and Hunter. They are skilled marksmen and 
 - Attacks gain a passive enchantment bonus, starting at +1 and increasing every four levels of experience up to +5 at level 16. 
 - May cast druidic spells.
 - Does not automatically learn all spells of a given level as Druids do. Instead, Shamans select new spells to learn at each level, which they can cast daily without memorization.
-- Gains immediate access to a number of Spirit Hunter-specific spells, which can be cast like any other: Create Spirit Arrows, Imbued Shot - Frost, Ether Step, Imbued Shot - Silence, Create Splitting Arrows, Imbued Shot - Blood Drinker, Ether Walk
+- Gains immediate access to a number of Spirit Hunter-specific spells, which can be cast like any other: Mark of the Hunt, Imbued Shot - Frost, Ether Step, Imbued Shot - Silence, Hunter's Gaze, Imbued Shot - Blood Drinker, Ether Walk
 - Gains use of the Detect Illusion skill with 20% points as a base and an 4 points per level, up to a maximum of 100% at level 20.
 - A Spirit Hunters' 'Shamanic Dance' does not summon normal spirits but instead calls a Spirit Hound to assist the Shaman.
 - Does not gain bonus spells per day from high Wisdom.
