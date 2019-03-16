@@ -2,8 +2,11 @@
 ## A Wild Hunt inspired shaman kit that focuses on using short bows.
 ### For BG:EE, BG2:EE, EET, IWD:EE(untested)
 
-**Updated Warning: With the removal of Multi-Shot arrows the kit is far less overpowered now than it used to be but probably still on the very far end of the power scale.**
-
+**Warnings and Notes:**  
+**-With the removal of Multi-Shot arrows the kit is far less overpowered now than it used to be but probably still on the high end of the power scale.**    
+**-This kit is build for use by player1 (the protagonist in a single player game, first slot in multi-player sessions) only, using it for other party members will result in bugs/not work properly)**
+**  
+  
 Spirit Hunters are equal parts Shaman and Hunter. They are skilled marksmen and can use their Shamanic Dance to summon a Spirit Hound to aid them on their hunt.
 
 **CLASS FEATURES:**
