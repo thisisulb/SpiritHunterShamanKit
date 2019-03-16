@@ -1,6 +1,5 @@
 IF
 	HPLT(Myself,2)
-	Global("UB_SHDEAD","GLOBAL",0)
 THEN
 	RESPONSE #100
 		SetInterrupt(FALSE)
