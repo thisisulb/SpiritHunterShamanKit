@@ -2,7 +2,7 @@
 ## A Wild Hunt inspired shaman kit that focuses on using short bows.
 ### For BG:EE, BG2:EE, EET, IWD:EE(untested)
 
-**WARNING This kit is quite obviously completely overpowered. Do not use if you want a challenging play-through.**
+**Updated Warning: With the removal of Multi-Shot arrows the kit is far less overpowered now than it used to be but probably still on the very far end of the power scale.**
 
 Spirit Hunters are equal parts Shaman and Hunter. They are skilled marksmen and can use their Shamanic Dance to summon a Spirit Hound to aid them on their hunt.
 
