@@ -4,10 +4,8 @@
 
 IF
 Global("UB_SH_PETSPAWN","GLOBAL",1)
-Global("UB_SHDEAD","GLOBAL",1)
 THEN
 RESPONSE #100
-SetGlobal("UB_SHDEAD","GLOBAL",0)
 MoveGlobalObject("UB_SH0",Player1)
 ActionOverride("UB_SH0",MoveToOffset([2.3]))
 ReallyForceSpellRES("UB_SH0D","UB_SH0")
