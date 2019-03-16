@@ -3,6 +3,7 @@ IF
 THEN
 	RESPONSE #100
 		SetInterrupt(FALSE)
+		SetGlobal("UB_SHDEAD","GLOBAL",1)
 		ReallyForceSpellRES("UB_SH0D",Myself)  // <NO TEXT>
 		SmallWait(5)
 		DestroySelf()
