@@ -95,11 +95,11 @@ Level: 4
 Sphere: Enchantment  
 Range: Special  
 Duration: Special  
-Casting Time: 1  
+Casting Time: Instant  
 Area of Effect: Caster  
 Saving Throw: None  
   
-This spell imbues the caster's bow with magical silence. The spell will travel with any arrow released by the caster's bow but only take effect once, on the first successful hit made during its duration.
+This spell imbues the caster's bow with a silence spell for up to one turn. The spell will travel with any arrow released by the caster's bow but only take effect once, on the first successful hit made during its duration.
 In addition to its normal effects the imbued arrow silences the target for one turn.  
   
 Note: Only one Imbued Shot effect can be active at a time. Casting another Imbued Shot spell will remove the previous spell's magic from the bow.  
