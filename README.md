@@ -156,8 +156,7 @@ This passive ability allows a Spirit Hunter to attack and cast spells while Ethe
 Increases the critical hit chance of ranged attacks by 10%.
 This passive ability can be selected up to 5 times.  
     
-**Master Archer**  
-An experienced Spirit Hunter's speed and precision can compete with even the best archers of the realms.
+**Swift Hunter**  
 This passive ability grants two additional attacks per round.  
   
 Requires: Sharpshooter  
