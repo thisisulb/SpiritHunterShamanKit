@@ -3,7 +3,6 @@
 ### For BG:EE, BG2:EE, EET, IWD:EE(untested)
 
 **Warnings and Notes:**  
-**-With the removal of Multi-Shot arrows the kit is far less overpowered now than it used to be but probably still on the high end of the power scale.**    
 **-This kit is build for use by player1 (the protagonist in a single player game, first slot in multi-player sessions) only, using it for other party members will result in bugs/not work properly)**
 **  
   
