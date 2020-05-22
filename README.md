@@ -109,7 +109,7 @@ Level: 5
 Sphere: Divination  
 Range: Personal  
 Duration: 2 turns  
-Casting Time: 6  
+Casting Time: 2  
 Area of Effect: Personal  
 Saving Throw: None  
   
