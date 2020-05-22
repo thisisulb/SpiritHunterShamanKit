@@ -1,6 +1,6 @@
 BACKUP ~SpiritHunter/backup~
 AUTHOR ~ThisIsUlb@gmail.com~
-VERSION ~0.5~
+VERSION ~1.0~
 //README ~SpiritHunter/readme.txt~
 
 ALWAYS
@@ -55,12 +55,12 @@ Level: 2
 Sphere: Enchantment
 Range: Special
 Duration: Special
-Casting Time: 1
+Casting Time: Instant
 Area of Effect: Caster
 Saving Throw: Spell partial
 
-This spell imbues the caster's bow with frost magic. The spell will travel with any arrow released by the caster's bow but only take effect once, on the first successful hit made during its duration.
-In addition to its normal effects the imbued arrow inflicts 1d4 points of cold damage and slows the target for one round unless a save vs spell is made. For every two extra levels of experience the arrow deals an additional 1d4 cold damage and the target receives a -1 save penalty, up to 5d4 damage and a -4 penalty at 9th level.
+This spell imbues the caster's bow with a frost magic spell for up to one turn. The spell will travel with any arrow released by the caster's bow but only take effect once, on the first successful hit made during its duration.
+In addition to its normal effects the imbued arrow inflicts 1d4 points of cold damage and slows the target for one round unless a save vs spell is made. For every two extra levels of experience the arrow deals an additional 1d4 cold damage and the target receives a cumulative -2 save penalty.
 
 Note: Only one Imbued Shot effect can be active at a time. Casting another Imbued Shot spell will remove the previous spell's magic from the bow.~
 
@@ -84,7 +84,7 @@ Level: 5
 Sphere: Divination
 Range: Personal
 Duration: 2 turns
-Casting Time: 6
+Casting Time: 2
 Area of Effect: Personal
 Saving Throw: None
 
@@ -98,7 +98,7 @@ Level: 3
 School: Invocation
 Range: Personal
 Duration: Instant
-Casting Time: 0
+Casting Time: Instant
 Area of Effect: Caster
 Saving Throw: None
 
@@ -113,11 +113,11 @@ Level: 4
 Sphere: Enchantment
 Range: Special
 Duration: Special
-Casting Time: 1
+Casting Time: Instant
 Area of Effect: Caster
 Saving Throw: None
 
-This spell imbues the caster's bow with magical silence. The spell will travel with any arrow released by the caster's bow but only take effect once, on the first successful hit made during its duration.
+This spell imbues the caster's bow with a silence spell for up to one turn. The spell will travel with any arrow released by the caster's bow but only take effect once, on the first successful hit made during its duration.
 In addition to its normal effects the imbued arrow silences the target for one turn.
 
 Note: Only one Imbued Shot effect can be active at a time. Casting another Imbued Shot spell will remove the previous spell's magic from the bow.~
@@ -141,12 +141,12 @@ Level: 6
 Sphere: Enchantment
 Range: Special
 Duration: Special
-Casting Time: 1
+Casting Time: Instant
 Area of Effect: Caster
 Saving Throw: None
 
-This spell imbues the caster's bow with a Blood Drinking spell. The spell will travel with any arrow released by the caster's bow but only take effect once, on the first successful hit made during its duration.
-In addition to its normal effects, targets hit by the imbued arrow will take 1d4 poison damage instantly and another 1d4 poison damage every two seconds for two rounds. The caster is healed for all damage done.
+This spell imbues the caster's bow with a blood drinking spell for up to one turn. The spell will travel with any arrow released by the caster's bow but only take effect once, on the first successful hit made during its duration.
+In addition to its normal effects, targets hit by the imbued arrow will take 4d4 poison damage instantly and another 4d4 poison damage every two seconds for two rounds. The caster is healed for all damage done.
 
 Note: Only one Imbued Shot effect can be active at a time. Casting another Imbued Shot spell will remove the previous spell's magic from the bow.~
 
@@ -159,7 +159,7 @@ Level: 7
 Sphere: Invocation
 Range: Personal
 Duration: 2 rounds
-Casting Time: 0
+Casting Time: Instant
 Area of Effect: Caster
 Saving Throw: None
 
@@ -406,9 +406,8 @@ This passive ability can be selected up to 5 times.~
 
 // HLA Master Archer
 COPY ~SpiritHunter/files/UB_SH11.SPL~ ~override~
-SAY NAME1 ~Master Archer~
-SAY UNIDENTIFIED_DESC ~Once a Spirit Hunter has mastered the bow, <PRO_HISHER> speed and precision can compete with even the best archers of the realms.
-This passive ability grants two additional attacks per round.
+SAY NAME1 ~Swift Hunter~
+SAY UNIDENTIFIED_DESC ~This passive ability grants two additional attacks per round.
 
 Requires: Sharpshooter~
 
