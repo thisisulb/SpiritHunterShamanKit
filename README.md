@@ -84,7 +84,7 @@ Level: 3
 School: Invocation  
 Range: Personal  
 Duration: Instant  
-Casting Time: 0  
+Casting Time: Instant  
 Area of Effect: Caster  
 Saving Throw: None  
   
