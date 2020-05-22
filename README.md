@@ -3,8 +3,8 @@
 ### For BG:EE, BG2:EE, EET, IWD:EE(untested)
 
 **Warnings and Notes:**  
-**This kit is intended to be used by player1 (the protagonist in a single player game, first slot in multi-player sessions) only.  
-The kit can still be used by other characters but since the spirit hound is a familiar and those are treated as belonging to player1 by the engine, the hound might continue to see player1 as its 'master' in some regards.**
+This kit is intended to be used by player1 (the protagonist in a single player game, first slot in multi-player sessions) only.  
+The kit can still be used by other characters but since the spirit hound is a familiar and those are treated as belonging to player1 by the engine, the hound might continue to see player1 as its 'master' in some regards.
   
   
 Spirit Hunters are equal parts Shaman and Hunter. They are skilled marksmen and can use their Shamanic Dance to summon a Spirit Hound to aid them on their hunt.
