@@ -74,8 +74,8 @@ Casting Time: Instant
 Area of Effect: Caster  
 Saving Throw: Spell partial  
   
-This spell imbues the caster's bow with frost magic. The spell will travel with any arrow released by the caster's bow but only take effect once, on the first successful hit made during its duration.
-In addition to its normal effects the imbued arrow inflicts 1d4 points of cold damage and slows the target for one round unless a save vs spell is made. For every two extra levels of experience the arrow deals an additional 1d4 cold damage and the target receives a -2 save penalty.  
+This spell imbues the caster's bow with frost magic spell for up to one turn. The spell will travel with any arrow released by the caster's bow but only take effect once, on the first successful hit made during its duration.
+In addition to its normal effects the imbued arrow inflicts 1d4 points of cold damage and slows the target for one round unless a save vs spell is made. For every two extra levels of experience the arrow deals an additional 1d4 cold damage and the target receives a cumulative -2 save penalty.  
   
 Note: Only one Imbued Shot effect can be active at a time. Casting another Imbued Shot spell will remove the previous spell's magic from the bow.  
   
