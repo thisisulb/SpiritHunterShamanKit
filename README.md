@@ -121,12 +121,12 @@ Level: 6
 Sphere: Enchantment  
 Range: Special  
 Duration: Special  
-Casting Time: 1  
+Casting Time: Instant  
 Area of Effect: Caster  
 Saving Throw: None  
   
-This spell imbues the caster's bow with a Blood Drinking spell. The spell will travel with any arrow released by the caster's bow but only take effect once, on the first successful hit made during its duration.  
-In addition to its normal effects, targets hit by the imbued arrow will take 1d4 poison damage instantly and another 1d4 poison damage every two seconds for two rounds. The caster is healed for all damage done.  
+This spell imbues the caster's bow with a Blood Drinking spell for up to one turn. The spell will travel with any arrow released by the caster's bow but only take effect once, on the first successful hit made during its duration.  
+In addition to its normal effects, targets hit by the imbued arrow will take 4d4 poison damage instantly and another 4d4 poison damage every two seconds for two rounds. The caster is healed for all damage done.  
   
 Note: Only one Imbued Shot effect can be active at a time. Casting another Imbued Shot spell will remove the previous spell's magic from the bow.  
   
@@ -135,7 +135,7 @@ Level: 7
 Sphere: Invocation  
 Range: Personal  
 Duration: 2 rounds  
-Casting Time: 0  
+Casting Time: Instant  
 Area of Effect: Caster  
 Saving Throw: None  
   
