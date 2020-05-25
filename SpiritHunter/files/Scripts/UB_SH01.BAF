@@ -103,7 +103,7 @@ END
 
 IF
 	InActiveArea(Player1)
-	!Range(Player1,25)
+	!Range(Player1,30)
 	ActionListEmpty()
 THEN
 	RESPONSE #100
